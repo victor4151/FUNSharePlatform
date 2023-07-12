@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A42C3B7-4D1E-419E-AD74-07E7106FE85F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FUNShare</RootNamespace>
+    <AssemblyName>FUNShare</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Achievement.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AchievementList.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Advertise_Order.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Advertise_Product.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Advertise_Product_Detail.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Age.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CCustomer.cs" />
+    <Compile Include="CCustomerManager.cs" />
+    <Compile Include="City.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Comment.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CProduct.cs" />
+    <Compile Include="CProductDetail.cs" />
+    <Compile Include="CProductManager.cs" />
+    <Compile Include="CSupplier.cs" />
+    <Compile Include="CSupplierManage.cs" />
+    <Compile Include="Customer_Infomation.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CValidateCode.cs" />
+    <Compile Include="District.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddCustomer.designer.cs">
+      <DependentUpon>FrmAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddRelatives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddRelatives.designer.cs">
+      <DependentUpon>FrmAddRelatives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomerDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustomerDetail.designer.cs">
+      <DependentUpon>FrmCustomerDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustomerList.designer.cs">
+      <DependentUpon>FrmCustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmForgetPassword.designer.cs">
+      <DependentUpon>FrmForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductDetail.designer.cs">
+      <DependentUpon>FrmProductDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductList.designer.cs">
+      <DependentUpon>FrmProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmsomethinchart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmsomethinchart.designer.cs">
+      <DependentUpon>Frmsomethinchart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSupplierAddSupplierInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSupplierAddSupplierInformation.designer.cs">
+      <DependentUpon>FrmSupplierAddSupplierInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSupplierDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSupplierDetail.designer.cs">
+      <DependentUpon>FrmSupplierDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSupplierFather.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSupplierFather.designer.cs">
+      <DependentUpon>FrmSupplierFather.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSupplierList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSupplierList.designer.cs">
+      <DependentUpon>FrmSupplierList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Filter.designer.cs">
+      <DependentUpon>Frm_Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_LandingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_LandingPage.designer.cs">
+      <DependentUpon>Frm_LandingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Menu.Designer.cs">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Order.designer.cs">
+      <DependentUpon>Frm_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_OrderPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_OrderPreview.designer.cs">
+      <DependentUpon>Frm_OrderPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SupplierPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SupplierPreview.Designer.cs">
+      <DependentUpon>Frm_SupplierPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunShareModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FunShareModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FunShareModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FunShareModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FunShareModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FUNShare_Model.cs" />
+    <Compile Include="Image_List.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Interest.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberAchievement.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Detail.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PocketList.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategory.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Detail.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Region.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Status.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubCategory.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Survey.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>FunShareModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAddCustomer.resx">
+      <DependentUpon>FrmAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddRelatives.resx">
+      <DependentUpon>FrmAddRelatives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomerDetail.resx">
+      <DependentUpon>FrmCustomerDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomerList.resx">
+      <DependentUpon>FrmCustomerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmForgetPassword.resx">
+      <DependentUpon>FrmForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductDetail.resx">
+      <DependentUpon>FrmProductDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductList.resx">
+      <DependentUpon>FrmProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmsomethinchart.resx">
+      <DependentUpon>Frmsomethinchart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSupplierAddSupplierInformation.resx">
+      <DependentUpon>FrmSupplierAddSupplierInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSupplierDetail.resx">
+      <DependentUpon>FrmSupplierDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSupplierFather.resx">
+      <DependentUpon>FrmSupplierFather.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSupplierList.resx">
+      <DependentUpon>FrmSupplierList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Filter.resx">
+      <DependentUpon>Frm_Filter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_LandingPage.resx">
+      <DependentUpon>Frm_LandingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Menu.resx">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Order.resx">
+      <DependentUpon>Frm_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_OrderPreview.resx">
+      <DependentUpon>Frm_OrderPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SupplierPreview.resx">
+      <DependentUpon>Frm_SupplierPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="FunShareModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FunShareModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="FunShareModel.edmx.diagram">
+      <DependentUpon>FunShareModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marketing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\member.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner2.png" />
+    <None Include="Resources\banner3.png" />
+    <None Include="Resources\banner4.png" />
+    <None Include="Resources\登入註冊.png" />
+    <None Include="Resources\banner1.png" />
+    <None Include="Resources\account.png" />
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FunShareModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FunShareModel.edmx</DependentUpon>
+      <LastGenOutput>FunShareModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="FunShareModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FunShareModel.edmx</DependentUpon>
+      <LastGenOutput>FunShareModel.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\danceBanner.png" />
+    <None Include="Resources\jumpBanner.png" />
+    <None Include="Resources\picaBanner.png" />
+    <Content Include="Resources\report.png" />
+    <None Include="Resources\sailingBanner.png" />
+    <None Include="Resources\白底.png" />
+    <None Include="Resources\ProductImage.jpg" />
+    <None Include="Resources\science.png" />
+    <None Include="Resources\talent.png" />
+    <None Include="Resources\experince.png" />
+    <None Include="Resources\camp.png" />
+    <None Include="Resources\all.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

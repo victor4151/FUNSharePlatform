@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FUNShareModelStoreContainer" CdmEntityContainer="FUNShareEntities">
+    <EntitySetMapping Name="Achievements">
+      <EntityTypeMapping TypeName="FUNShareModel.Achievement">
+        <MappingFragment StoreEntitySet="Achievement">
+          <ScalarProperty Name="Achievement_ID" ColumnName="Achievement_ID" />
+          <ScalarProperty Name="Achievement_Name" ColumnName="Achievement_Name" />
+          <ScalarProperty Name="Achievement_Description" ColumnName="Achievement_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AchievementLists">
+      <EntityTypeMapping TypeName="FUNShareModel.AchievementList">
+        <MappingFragment StoreEntitySet="AchievementList">
+          <ScalarProperty Name="AchievementList_ID" ColumnName="AchievementList_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Achievement_ID" ColumnName="Achievement_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Advertise_Order">
+      <EntityTypeMapping TypeName="FUNShareModel.Advertise_Order">
+        <MappingFragment StoreEntitySet="Advertise_Order">
+          <ScalarProperty Name="Ad_Order_ID" ColumnName="Ad_Order_ID" />
+          <ScalarProperty Name="Package_ID" ColumnName="Package_ID" />
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Advertise_Product">
+      <EntityTypeMapping TypeName="FUNShareModel.Advertise_Product">
+        <MappingFragment StoreEntitySet="Advertise_Product">
+          <ScalarProperty Name="Package_ID" ColumnName="Package_ID" />
+          <ScalarProperty Name="Package_Name" ColumnName="Package_Name" />
+          <ScalarProperty Name="Ads_Description" ColumnName="Ads_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Advertise_Product_Detail">
+      <EntityTypeMapping TypeName="FUNShareModel.Advertise_Product_Detail">
+        <MappingFragment StoreEntitySet="Advertise_Product_Detail">
+          <ScalarProperty Name="Package_Detail_ID" ColumnName="Package_Detail_ID" />
+          <ScalarProperty Name="Package_ID" ColumnName="Package_ID" />
+          <ScalarProperty Name="Unit_Price" ColumnName="Unit_Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Begin_Time" ColumnName="Begin_Time" />
+          <ScalarProperty Name="End_Time" ColumnName="End_Time" />
+          <ScalarProperty Name="Order_Time" ColumnName="Order_Time" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ages">
+      <EntityTypeMapping TypeName="FUNShareModel.Age">
+        <MappingFragment StoreEntitySet="Age">
+          <ScalarProperty Name="Age_ID" ColumnName="Age_ID" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="FUNShareModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+          <ScalarProperty Name="Category_Description" ColumnName="Category_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="FUNShareModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="City_ID" ColumnName="City_ID" />
+          <ScalarProperty Name="City_Name" ColumnName="City_Name" />
+          <ScalarProperty Name="Region_ID" ColumnName="Region_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="FUNShareModel.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="Comment_ID" ColumnName="Comment_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Member_ID" ColumnName="Member_ID" />
+          <ScalarProperty Name="Review" ColumnName="Review" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer_Infomation">
+      <EntityTypeMapping TypeName="FUNShareModel.Customer_Infomation">
+        <MappingFragment StoreEntitySet="Customer_Infomation">
+          <ScalarProperty Name="Member_ID" ColumnName="Member_ID" />
+          <ScalarProperty Name="Resident_ID" ColumnName="Resident_ID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone_Number" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Disctrict_ID" ColumnName="Disctrict_ID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Birth_Date" ColumnName="Birth_Date" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsAllergy_" ColumnName="IsAllergy?" />
+          <ScalarProperty Name="AllergyDescription" ColumnName="AllergyDescription" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Districts">
+      <EntityTypeMapping TypeName="FUNShareModel.District">
+        <MappingFragment StoreEntitySet="District">
+          <ScalarProperty Name="District_ID" ColumnName="District_ID" />
+          <ScalarProperty Name="District_Name" ColumnName="District_Name" />
+          <ScalarProperty Name="City_ID" ColumnName="City_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Image_List">
+      <EntityTypeMapping TypeName="FUNShareModel.Image_List">
+        <MappingFragment StoreEntitySet="Image_List">
+          <ScalarProperty Name="Image_ID" ColumnName="Image_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Interests">
+      <EntityTypeMapping TypeName="FUNShareModel.Interest">
+        <MappingFragment StoreEntitySet="Interest">
+          <ScalarProperty Name="Interest_ID" ColumnName="Interest_ID" />
+          <ScalarProperty Name="SubCategory_ID" ColumnName="SubCategory_ID" />
+          <ScalarProperty Name="Member_ID" ColumnName="Member_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MemberAchievements">
+      <EntityTypeMapping TypeName="FUNShareModel.MemberAchievement">
+        <MappingFragment StoreEntitySet="MemberAchievement">
+          <ScalarProperty Name="MemberAchievement_ID" ColumnName="MemberAchievement_ID" />
+          <ScalarProperty Name="Member_ID" ColumnName="Member_ID" />
+          <ScalarProperty Name="Achievement_ID" ColumnName="Achievement_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="FUNShareModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+          <ScalarProperty Name="Order_Time" ColumnName="Order_Time" />
+          <ScalarProperty Name="Member_ID" ColumnName="Member_ID" />
+          <ScalarProperty Name="Tax_ID" ColumnName="Tax_ID" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_Detail">
+      <EntityTypeMapping TypeName="FUNShareModel.Order_Detail">
+        <MappingFragment StoreEntitySet="Order_Detail">
+          <ScalarProperty Name="Order_Detail_ID" ColumnName="Order_Detail_ID" />
+          <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+          <ScalarProperty Name="Product_Detail_ID" ColumnName="Product_Detail_ID" />
+          <ScalarProperty Name="Member_ID" ColumnName="Member_ID" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PocketLists">
+      <EntityTypeMapping TypeName="FUNShareModel.PocketList">
+        <MappingFragment StoreEntitySet="PocketList">
+          <ScalarProperty Name="Pocketlist_ID" ColumnName="Pocketlist_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Member_ID" ColumnName="Member_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="FUNShareModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Commision" ColumnName="Commision" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Class_ID" ColumnName="Class_ID" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Product_Intro" ColumnName="Product_Intro" />
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+          <ScalarProperty Name="Age_ID" ColumnName="Age_ID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Deadline" ColumnName="Deadline" />
+          <ScalarProperty Name="ReleasedTime" ColumnName="ReleasedTime" />
+          <ScalarProperty Name="Times" ColumnName="Times" />
+          <ScalarProperty Name="Interval" ColumnName="Interval" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="IsClass_" ColumnName="IsClass?" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product_Detail">
+      <EntityTypeMapping TypeName="FUNShareModel.Product_Detail">
+        <MappingFragment StoreEntitySet="Product_Detail">
+          <ScalarProperty Name="Product_Detail_ID" ColumnName="Product_Detail_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Begin_Time" ColumnName="Begin_Time" />
+          <ScalarProperty Name="End_Time" ColumnName="End_Time" />
+          <ScalarProperty Name="District_ID" ColumnName="District_ID" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCategories">
+      <EntityTypeMapping TypeName="FUNShareModel.ProductCategory">
+        <MappingFragment StoreEntitySet="ProductCategories">
+          <ScalarProperty Name="ProductCategory_ID" ColumnName="ProductCategory_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="SubCategory_ID" ColumnName="SubCategory_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regions">
+      <EntityTypeMapping TypeName="FUNShareModel.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="Region_ID" ColumnName="Region_ID" />
+          <ScalarProperty Name="Region_Name" ColumnName="Region_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="FUNShareModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Status_Type" ColumnName="Status_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubCategories">
+      <EntityTypeMapping TypeName="FUNShareModel.SubCategory">
+        <MappingFragment StoreEntitySet="SubCategory">
+          <ScalarProperty Name="SubCategory_ID" ColumnName="SubCategory_ID" />
+          <ScalarProperty Name="SubCategory_Name" ColumnName="SubCategory_Name" />
+          <ScalarProperty Name="SubCategory_Description" ColumnName="SubCategory_Description" />
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="FUNShareModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+          <ScalarProperty Name="Tax_ID" ColumnName="Tax_ID" />
+          <ScalarProperty Name="Supplier_Name" ColumnName="Supplier_Name" />
+          <ScalarProperty Name="Supplier_Phone" ColumnName="Supplier_Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="City_ID" ColumnName="City_ID" />
+          <ScalarProperty Name="Supplier_Photo" ColumnName="Supplier_Photo" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Contact_Person" ColumnName="Contact_Person" />
+          <ScalarProperty Name="Logo_Image" ColumnName="Logo_Image" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Surveys">
+      <EntityTypeMapping TypeName="FUNShareModel.Survey">
+        <MappingFragment StoreEntitySet="Survey">
+          <ScalarProperty Name="Survey_ID" ColumnName="Survey_ID" />
+          <ScalarProperty Name="Order_Detail_ID" ColumnName="Order_Detail_ID" />
+          <ScalarProperty Name="Member_ID" ColumnName="Member_ID" />
+          <ScalarProperty Name="General_Rank" ColumnName="General_Rank" />
+          <ScalarProperty Name="General_Suggestion" ColumnName="General_Suggestion" />
+          <ScalarProperty Name="Environment_Rank" ColumnName="Environment_Rank" />
+          <ScalarProperty Name="Environment_Suggestion" ColumnName="Environment_Suggestion" />
+          <ScalarProperty Name="Teacher_Rank" ColumnName="Teacher_Rank" />
+          <ScalarProperty Name="Teacher_Suggestion" ColumnName="Teacher_Suggestion" />
+          <ScalarProperty Name="Others" ColumnName="Others" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="FUNShareModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

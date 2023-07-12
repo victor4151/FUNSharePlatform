@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8558b373a8104617af73d12000d04c03" Name="Diagram1">
+        <EntityTypeShape EntityType="FUNShareModel.Achievement" Width="1.5" PointX="6" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.AchievementList" Width="1.5" PointX="8.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Advertise_Order" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Advertise_Product" Width="1.5" PointX="9" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Advertise_Product_Detail" Width="1.5" PointX="11.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Age" Width="1.5" PointX="3.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Category" Width="1.5" PointX="6.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.City" Width="1.5" PointX="6.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Comment" Width="1.5" PointX="8.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Customer_Infomation" Width="1.5" PointX="11.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.District" Width="1.5" PointX="9" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Image_List" Width="1.5" PointX="8.25" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Interest" Width="1.5" PointX="13.5" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.MemberAchievement" Width="1.5" PointX="16.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Order" Width="1.5" PointX="11.25" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Order_Detail" Width="1.5" PointX="13.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.PocketList" Width="1.5" PointX="8.25" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Product" Width="1.5" PointX="6" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Product_Detail" Width="1.5" PointX="11.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.ProductCategory" Width="1.5" PointX="11.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Region" Width="1.5" PointX="4.5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Status" Width="1.5" PointX="9" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.SubCategory" Width="1.5" PointX="9" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Supplier" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.Survey" Width="1.5" PointX="15.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FUNShareModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="FUNShareModel.FK_AchievementList_Achievement" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_MemberAchievement_Achievement" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_AchievementList_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Advertise_Order_Advertise_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Advertise_Order_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Advertise_Product_Detail_Advertise_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Advertise_Product_Detail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Product_Age" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_SubCategory_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_City_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_District_City" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Comment_Customer_Infomation" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Comment_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Customer_Infomation_Customer_Infomation" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Customer_Infomation_District" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Customer_Infomation_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Interest_Customer_Infomation" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_MemberAchievement_Customer_Infomation" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Order_Customer_Infomation" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Order_Detail_Customer_Infomation" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_PocketList_Customer_Infomation" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Survey_Customer_Infomation" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Product_Detail_District" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Product_Detail_District1" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Image_List_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Interest_SubCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Order_Detail_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Order_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Order_Detail_Product_Detail" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Order_Detail_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Survey_Order_Detail" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_PocketList_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_PocketList_Product1" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Product_Detail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Product_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Product_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_ProductCategories_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Product_Detail_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_ProductCategories_SubCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="FUNShareModel.FK_Supplier_City" />
+        <AssociationConnector Association="FUNShareModel.FK_Supplier_Status" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
